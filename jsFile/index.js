@@ -1,6 +1,6 @@
 
 // const socket = io('http://localhost:8000');
-const socket = io('https://your-app-name.onrender.com');
+const socket = io('https://chattapp-2-0x8b.onrender.com');
 
 const form = document.getElementById('send-container');
 const messageInp = document.getElementById('MessageINP');
