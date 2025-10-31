@@ -67,6 +67,11 @@ const PORT = process.env.PORT || 8000; // dynamic port for Render
 // Serve frontend files
 app.use(express.static(__dirname));
 
+// Serve index.html on root route
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
 const users = {};
 
 io.on('connection', socket => {
